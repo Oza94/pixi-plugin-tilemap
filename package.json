@@ -1,0 +1,30 @@
+{
+  "name": "pixi-plugin-tilemap",
+  "version": "1.0.0",
+  "description": "A tilemap renderer for PIXI.JS",
+  "repository": "https://github.com/Oza94/pixi-plugin-tilemap",
+  "author": "pierre.beaujeu@rednet.io",
+  "license": "MIT",
+  "main": "dist/pixi-plugin-tilemap.cjs.js",
+  "module": "dist/pixi-plugin-tilemap.cjs.js",
+  "scripts": {
+    "build": "rollup -c",
+    "demo": "webpack --config demo/webpack.config.js && http-server -c-1 -p 8080 demo/build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "5.0.2",
+    "file-loader": "6.0.0",
+    "html-webpack-plugin": "4.3.0",
+    "http-server": "0.12.3",
+    "pixi.js": "5.3.1",
+    "rollup": "2.23.0",
+    "rollup-plugin-string": "3.0.0",
+    "tslib": "2.0.0",
+    "typescript": "3.9.7",
+    "webpack": "4.44.0",
+    "webpack-cli": "3.3.12"
+  },
+  "peerDependencies": {
+    "pixi.js": "5.x"
+  }
+}
